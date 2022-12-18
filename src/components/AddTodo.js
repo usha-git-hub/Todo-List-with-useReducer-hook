@@ -1,15 +1,4 @@
- import React, {  useState } from "react";
-
-const AddTodo = ({ dispatch }) => {
-
-  const [todo, setTodo] = useState("");
-  return (
-    <>
-      <form
-        id="todo-form"
-        onSubmit={(e) => {
-          e.preventDefault();
-          dispatch({ type: "add_todo", payload: { title: todo } });import React, {  useState } from "react";
+import React, {  useState } from "react";
           setTodo("");
 
         }}
